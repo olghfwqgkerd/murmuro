@@ -291,18 +291,12 @@ class Ui_MainWindow(object):
         
     def generateKey(self):
         random_gen = MadEyeGenerator().getNumbers
-<<<<<<< HEAD
         try:
             self.PRIVATE_KEY = RSA.generate(2048, random_gen)
             self.PUBLIC_KEY = self.PRIVATE_KEY.publickey()
             self.logInput.setText("----Generate keys [DONE]")
         except:
             self.logInput.setText("----Problem with taking frame [DONE]")
-=======
-        self.PRIVATE_KEY = RSA.generate(2048, random_gen)
-        self.PUBLIC_KEY = self.PRIVATE_KEY.publickey()
-        self.logInput.setText("----Generate keys [DONE]")
->>>>>>> fa47138f5b3286914651c961179423a8896076ad
         
     def createHas(self):
         self.B_MESSAGE = bytes(self.msgInput.toPlainText(), 'utf-8')
