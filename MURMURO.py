@@ -6,7 +6,7 @@ from Crypto.Signature.pkcs1_15 import PKCS115_SigScheme
 import sys
 import os
 
-from MadEyeGenerator import *
+from MEG import *
 
 def resourcePath(relative_path):
     # Get absolute path to resource, works for dev and for PyInstaller
